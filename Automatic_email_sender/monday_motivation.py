@@ -8,7 +8,7 @@ PW = "nlkm vwzy evrs buml"
 
 now = dt.datetime.now()
 weekday = now.weekday()
-if weekday == 1:
+if weekday == 2:
     with open("/Users/sindribjarkason/Desktop/Háksólinn í Reykjavík/Línuleg Algebra m. Tölvunarfræði/Github/Personal_Coding_Projects/Automatic_email_sender/quotes.txt") as file:
         all_quotes = file.readlines()
         number = rd.randint(0, 100)
@@ -19,7 +19,7 @@ if weekday == 1:
         connection.starttls()
         connection.login(user=MY_EMAIL, password=PW)
         connection.sendmail(from_addr=MY_EMAIL, 
-                        to_addrs="sindribjarka@gmail.com", 
+                        to_addrs="oliverkjaran@gmail.com", 
                         msg=f"Subject: Happy Monday Bitch\n\n{correct_quote}")  ## Subject: Money\n\nsome text is crucial for am automatic email so it 
 
 
