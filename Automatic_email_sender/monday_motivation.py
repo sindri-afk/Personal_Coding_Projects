@@ -19,7 +19,7 @@ if weekday == 2:
         connection.starttls()
         connection.login(user=MY_EMAIL, password=PW)
         connection.sendmail(from_addr=MY_EMAIL, 
-                        to_addrs="oliverkjaran@gmail.com", 
+                        to_addrs="thelma13254@gmail.com", 
                         msg=f"Subject: Happy Monday Bitch\n\n{correct_quote}")  ## Subject: Money\n\nsome text is crucial for am automatic email so it 
 
 
