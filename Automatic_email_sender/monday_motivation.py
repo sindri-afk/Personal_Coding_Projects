@@ -8,7 +8,7 @@ PW = "nlkm vwzy evrs buml"
 
 now = dt.datetime.now()
 weekday = now.weekday()
-if weekday == 2:
+if weekday == 0:
     with open("/Users/sindribjarkason/Desktop/Háksólinn í Reykjavík/Línuleg Algebra m. Tölvunarfræði/Github/Personal_Coding_Projects/Automatic_email_sender/quotes.txt") as file:
         all_quotes = file.readlines()
         number = rd.randint(0, 100)

@@ -8,7 +8,7 @@ MY_EMAIL = "sindrirafnpython@gmail.com"
 MY_PW = "nlkm vwzy evrs buml"
 
 
-data = pandas.read_csv("/Users/sindribjarkason/Desktop/Háksólinn í Reykjavík/Línuleg Algebra m. Tölvunarfræði/Github/Personal_Coding_Projects/Automatic_email_sender/birthdays.csv")
+data = pandas.read_csv("birthdays.csv")
 
 # create a dict comprehendsion
 birthdays_dict = {(data_row["month"], data_row["day"]): data_row for (index, data_row) in data.iterrows() }
